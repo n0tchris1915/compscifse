@@ -17,10 +17,9 @@ public class Main {
 		String str = sc.nextLine();*/
 
 		String st = "hello";
-		int key = 5;
-		for (int i = 1; i <= 26; i++) {
-			System.out.println(ca.encode(i, st));
-		}
+		int key = 2;
+		System.out.println(ca.encode(key, st));
+
 
 
 
