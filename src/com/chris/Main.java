@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		WordArr word = new WordArr();
+		CaesarCrack caesarCrack = new CaesarCrack();
 		Caesar ca = new Caesar();
 		//System.out.println(word.words.length);
 
@@ -16,12 +16,13 @@ public class Main {
 		System.out.print("Please enter the string you would like to encode: ");
 		String str = sc.nextLine();*/
 
-		String st = "hello";
-		int key = 2;
-		System.out.println(ca.encode(key, st));
+		//String str = "accept";
+		String input = "spalyhabyl";
+		//int key = 13;
+		//System.out.println(ca.encode(key, input));
 
-
-
+		String cracked = caesarCrack.crack(input);
+		System.out.println(cracked);
 
 	}
 
