@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		CaesarCrack caesarCrack = new CaesarCrack();
 		Caesar ca = new Caesar();
+		Vigenere va = new Vigenere();
 		//System.out.println(word.words.length);
 
 		Scanner sc = new Scanner(System.in);
@@ -17,11 +18,12 @@ public class Main {
 		String str = sc.nextLine();*/
 
 		//String str = "accept";
-		String input = "This is a sentence.";
-		int key = 13;
-		String encoded = ca.encode(key, input);
-		System.out.println(encoded);
-		System.out.println(ca.decode(key, encoded));
+		//String input = "This is a sentence.";
+		//int key = 13;
+		//String encoded = ca.encode(key, input);
+		System.out.println(va.encode("workshop", "this is input"));
+		//System.out.println(encoded);
+		//System.out.println(ca.decode(key, encoded));
 
 
 		//String cracked = caesarCrack.crack(input);

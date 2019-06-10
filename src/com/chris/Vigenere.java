@@ -1,15 +1,36 @@
 package com.chris;
 
 public class Vigenere {
-	public String encode(int key, String input) {
+	public String encode(String key, String input) {
 		String code = "";
+		char[] letters = input.toCharArray();
+		int len = key.length();
+		int count = 0;
+		
+		for (int i = 0; i < letters.length; i++) {
+			if (count == len) {
+				count = 0;
+			}
+
+			if (Character.isLetter(input.charAt(i))) {
+				letters[i] = key.charAt(count);
+				count++;
+			} else {
+				letters[i] = input.charAt(i);
+			}
+		}
 
 		for (int i = 0; i < input.length(); i++) {
-			if (Character.isUpperCase(input.charAt(i))) {
-				code += (char)(((input.charAt(i) - 65 + key) % 26) + 65);
+			if (Character.isLetter(input.charAt(i))) {
+				if (Character.isUpperCase(input.charAt(i))) {
+					code += (char)(((input.charAt(i) - 65 + letters[i] - 65) % 26) + 65);
+				} else {
+					code += (char)(((input.charAt(i) - 97 + letters[i] - 97) % 26) + 97);
+				}
 			} else {
-				code += (char)(((input.charAt(i) - 97 + key) % 26) + 97);
+				code += input.charAt(i);
 			}
+
 		}
 
 		return code;
