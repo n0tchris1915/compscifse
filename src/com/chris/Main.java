@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		CaesarCrack caesarCrack = new CaesarCrack();
+		VigenereCrack vigenereCrack = new VigenereCrack();
 		Caesar ca = new Caesar();
 		Vigenere va = new Vigenere();
 		//System.out.println(word.words.length);
@@ -17,16 +18,8 @@ public class Main {
 		System.out.print("Please enter the string you would like to encode: ");
 		String str = sc.nextLine();*/
 
-		//String str = "accept";
-		//String input = "This is a sentence.";
-		//int key = 13;
-		//String encoded = ca.encode(key, input);
-		String word = va.encode("revolution", "viva la revolution");
-		System.out.println(word);
-		System.out.println(va.decode("revolution", word));
-		//System.out.println(encoded);
-		//System.out.println(ca.decode(key, encoded));
 
+		System.out.println(vigenereCrack.crack("rfjfechv"));
 
 		//String cracked = caesarCrack.crack(input);
 		//System.out.println(cracked);
