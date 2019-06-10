@@ -21,7 +21,9 @@ public class Main {
 		//String input = "This is a sentence.";
 		//int key = 13;
 		//String encoded = ca.encode(key, input);
-		System.out.println(va.encode("workshop", "this is input"));
+		String word = va.encode("revolution", "viva la revolution");
+		System.out.println(word);
+		System.out.println(va.decode("revolution", word));
 		//System.out.println(encoded);
 		//System.out.println(ca.decode(key, encoded));
 
