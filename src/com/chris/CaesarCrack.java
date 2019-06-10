@@ -15,6 +15,6 @@ public class CaesarCrack {
 				}
 			}
 		}
-		return "it did'nt work chief";
+		return "Could not find a match.";
 	}
 }

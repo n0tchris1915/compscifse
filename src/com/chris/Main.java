@@ -17,12 +17,15 @@ public class Main {
 		String str = sc.nextLine();*/
 
 		//String str = "accept";
-		String input = "spalyhabyl";
-		//int key = 13;
-		//System.out.println(ca.encode(key, input));
+		String input = "This is a sentence.";
+		int key = 13;
+		String encoded = ca.encode(key, input);
+		System.out.println(encoded);
+		System.out.println(ca.decode(key, encoded));
 
-		String cracked = caesarCrack.crack(input);
-		System.out.println(cracked);
+
+		//String cracked = caesarCrack.crack(input);
+		//System.out.println(cracked);
 
 	}
 
