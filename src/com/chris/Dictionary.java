@@ -1,6 +1,6 @@
 package com.chris;
 
-public class WordArr {
+public class Dictionary {
 	String[] words = {"a",
 			"abandon",
 			"ability",

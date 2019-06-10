@@ -3,7 +3,7 @@ package com.chris;
 public class CaesarCrack {
 	public String crack(String input) {
 		Caesar ca = new Caesar();
-		WordArr word = new WordArr();
+		Dictionary word = new Dictionary();
 
 		String decoded;
 		for (int i = 1; i < 26; i++) {
